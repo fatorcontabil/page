@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Fator Contábil: Erro{% endblock %}
+
+{% block css %}
+  <link href="{{url_for('static',filename='css/error.css')}}" rel="stylesheet"/>
+{% endblock %}
+
+{% block content %}
+{% include "components/nav_bar.html" %}
+  <div class="wrapper">
+    <div id="container">
+        <div class="error-container">
+          <div class="hgroup">
+            <h2>Uau! Algo errado não está certo&hellip;</h2>
+          </div>
+          <h1 class="display-1">{{ number }}</h1>
+          <p>{{ error }}</p>
+        </div>
+    </div>
+  </div>
+{% endblock %}
