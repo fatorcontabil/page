@@ -1,7 +1,7 @@
 :root {
-    --main-color: #00C29E
+  --main-color: #00C29E
 }
 
 .text-main {
-    color: var(--main-color) !important;
-  }
+	color: var(--main-color) !important;
+}
